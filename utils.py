@@ -395,7 +395,7 @@ def train_model_mfcc(data_set, num_epochs=250, ckpt_dir='checkpoints'):
     # Start training
     callbacks = [
         ModelCheckpoint(
-            filepath='{}/mymodel2_{epoch:02d}.h5'.format(ckptd),
+            filepath='{}/mymodel2_{{epoch:02d}}.h5'.format(ckptd),
             save_best_only=True,
             monitor='val_accuracy',
             verbose=1)
