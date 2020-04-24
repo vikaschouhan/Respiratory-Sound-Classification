@@ -29,7 +29,7 @@ from   tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-import tf2_models
+import tf2_models.tf2_models as tf2_models
 
 ###############################################
 # Make directory
